@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora codar 2? 7</title>
+</head>
+<body>
+    
+    <script>
+
+        alert("informe a quantidades de maças que deseja comprar!")
+        alert("na compra de ate 11 maças, o preço da unidade é R$ 3,50, apartir de 12 unidades, o preço da unidade é R$ 2,50 ")
+
+        var number = parseInt(prompt("Quantas maças você quer comprar? "))
+
+        if(number <= 0){
+            document.write("Valor Invalido!")
+        } else if(number >1 && number<12){
+            document.write("Valor da unidade: R$ 3,50 <br>")
+            document.write("Quantidade de maças compradas: " + number + "<br>")
+            document.write("Total Gasto: R$ " + number * 3.50 + "<br>")
+        } else if(number>11){
+            document.write("Valor da maça: R$ 2,50 <br>")
+            document.write("Quantidade de maças compradas: " + number + "<br>")
+            document.write("Total Gasto: R$ " + number * 2.50 + "<br>") 
+        }
+    </script>
+
+</body>
+</html>
