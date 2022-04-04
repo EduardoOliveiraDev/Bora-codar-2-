@@ -21,17 +21,27 @@
             let baseT = parseFloat(prompt("Nos informe a base em metros do seu triangulo"))
             let alturaT = parseFloat(prompt("Nos informe a altura em metros do seu triangulo"))
             let AreaTriangulo = ((baseT * alturaT) / 2)
+            let Tco = (baseT * baseT)
+            let Tca = (alturaT * alturaT)
+            let hip2 = Tco + Tca
+            let hip = Math.sqrt(hip2)
+            let areatotalT = baseT + alturaT + hip 
+
             document.write("Você escolheu três lados, e isso forma um triangulo <br>" )
-            document.write("Você escolheu o tamanho de sua base de: " + baseT + "m<br>")
-            document.write("Você escolheu o tamanho de sua altura de: " + alturaT + "m<br>")
+            document.write("Você escolheu o tamanho de sua base é de: " + baseT + "m<br>")
+            document.write("Você escolheu o tamanho de sua altura é de: " + alturaT + "m<br>")
+            document.write("Você escolheu o tamanho de sua hipotenusa é de: " + hip + "m<br>")
+            document.write("E o perimetro total do seu triangulo é de: " + areatotalT + "m<br>" )
             document.write("E a area total do seu triangulo é de: " + AreaTriangulo + "m²<br>" )
 
         } else if(forma == 4){
             alert("Você digitou quatro lados, no caso, um quadrado!")
             let ladoQ = parseFloat(prompt("Nos informe um lado em metros do seu quadrado"))
             let AreaQuadrado = (ladoQ * ladoQ)
+            let perimetroQ = (ladoQ*4)
             document.write("Você escolheu quatro lados, e isso forma um quadrado <br>" )
             document.write("Você escolheu o tamanho de um lado de: " + ladoQ + "m<br>")
+            document.write("E o perimetro total do seu quadrado é de: " + perimetroQ + "m²<br>" )
             document.write("E a area total do seu quadrado é de: " + AreaQuadrado + "m²<br>" )
 
         } else if(forma == 5){
